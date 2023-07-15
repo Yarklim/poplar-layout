@@ -1,0 +1,33 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--main-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+}
