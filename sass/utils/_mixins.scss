@@ -4,3 +4,13 @@
   padding-left: $pl;
   padding-right: $pr;
 }
+
+// ----------------- Adaptive Font --------------------
+$maxWidth: 1440;
+@mixin adaptiv-font($maxFontSize, $minFontSize) {
+  $addSize: $maxFontSize - $minFontSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(
+    #{$minFontSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+}

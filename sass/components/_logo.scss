@@ -1,0 +1,21 @@
+.header__logo {
+  width: 100px;
+
+  @media screen and (min-width: 767px) {
+    width: 130px;
+  }
+
+  @media screen and (min-width: 1023px) {
+    width: 150px;
+  }
+}
+
+.footer__logo {
+  width: 150px;
+
+  margin-top: 78px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}

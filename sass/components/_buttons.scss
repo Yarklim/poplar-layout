@@ -1,38 +1,35 @@
 .btn {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 
-  min-width: 200px;
+  font-weight: 600;
+  line-height: 2;
+  text-transform: uppercase;
 
-  padding: 10px 24px;
+  padding: 15px 30px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  border: none;
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  color: var(--light);
+  background-color: var(--accent);
+  border-radius: 60px;
 
   cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (min-width: 1200px) {
-    padding: 10px 32px;
-
-    font-weight: 700;
+  @media screen and (min-width: 768px) {
     font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-  }
-}
+    line-height: 1.75;
 
-.btn:hover,
-.btn:focus {
-  background-color: var(--button-dark);
+    padding: 16px 30px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--green-darker);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
