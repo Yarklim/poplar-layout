@@ -5,4 +5,10 @@
   padding-bottom: 40px;
 
   background-color: var(--dark-blue);
+
+  @media screen and (max-width: 767px) {
+    height: 100px;
+
+    padding-top: 30px;
+  }
 }
