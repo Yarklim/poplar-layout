@@ -14,3 +14,11 @@ $maxWidth: 1440;
     #{$minFontSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
   );
 }
+
+@mixin adaptiv-line-height($maxHeight, $minHeight) {
+  $addSize: $maxHeight - $minHeight;
+  $maxWidth: $maxWidth - 320;
+  line-height: calc(
+    #{$minHeight + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+}
