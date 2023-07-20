@@ -771,7 +771,7 @@ body {
   height: 20px;
   border-radius: 6px;
   background-color: var(--dark-lighter);
-  background-image: url(../../images/svg/check.svg);
+  background-image: url("../../images/svg/check.svg");
   background-size: 10px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -824,6 +824,34 @@ body {
   line-height: 1.24;
   text-transform: capitalize;
   color: var(--titles-color);
+  position: relative;
+}
+.issue__title::before {
+  content: "";
+  width: 96px;
+  height: 28px;
+  position: absolute;
+  left: 50%;
+  top: -48px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url("../../../images/svg/packman.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .issue__title::before {
+    width: 180px;
+    height: 50px;
+    top: -88px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .issue__title::before {
+    width: 258px;
+    height: 70px;
+    top: -124px;
+  }
 }
 .issue__title span {
   color: var(--green-darker);
@@ -965,7 +993,7 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(../../../images/svg/not.svg);
+  background-image: url("../../../images/svg/not.svg");
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
@@ -997,7 +1025,7 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(../../../images/svg/yes.svg);
+  background-image: url("../../../images/svg/yes.svg");
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
