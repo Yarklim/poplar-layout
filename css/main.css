@@ -770,7 +770,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  background: url("../../../images/svg/check.svg"), var(--dark-lighter);
+  background: url("../images/svg/check.svg"), var(--dark-lighter);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -833,7 +833,7 @@ body {
   top: -48px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: url("../../../images/svg/packman.svg");
+  background: url("../images/svg/packman.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -991,7 +991,7 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: url("../../../images/svg/not.svg");
+  background: url("../images/svg/not.svg");
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
@@ -1024,7 +1024,7 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background: url("../../../images/svg/yes.svg");
+  background: url("../images/svg/yes.svg");
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
