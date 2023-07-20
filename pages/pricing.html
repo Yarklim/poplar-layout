@@ -14,9 +14,231 @@
       href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
   </head>
   <body>
-    <h1>Pricing</h1>
+    <div class="page__wrapper">
+      <!-- ====================== Header ======================= -->
+      <header class="header">
+        <nav class="header__nav container">
+          <!-- Logo -->
+          <a href="../index.html" class="logo-link">
+            <svg width="180" height="72" class="header__logo">
+              <use href="../images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+
+          <!-- Menu -->
+          <div class="header__nav-menu">
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="../index.html" class="header__nav-link">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./about.html" class="header__nav-link">About</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./product.html" class="header__nav-link">Product</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./solutions.html" class="header__nav-link"
+                  >Solutions</a
+                >
+              </li>
+              <li class="header__nav-item active">
+                <a href="./pricing.html" class="header__nav-link">Pricing</a>
+              </li>
+            </ul>
+
+            <button class="btn header__button" type="button">
+              Try for Free
+            </button>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ========================== Main =========================== -->
+      <main class="main">
+        <section class="hero">
+          <div class="hero__inner container">
+            <div class="hero__descr">
+              <h1 class="hero__title">
+                Inflation-Proof The Cash In <span>Your Business</span>
+              </h1>
+              <p class="hero__text">
+                With the app that helps you invest cash automatically & access
+                it anytime
+              </p>
+              <button class="btn hero__btn" type="button">
+                Open a free account
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ========================= Footer ========================== -->
+      <footer class="footer">
+        <div class="footer__inner container">
+          <div class="footer__info">
+            <div class="footer__info-company">
+              <h2 class="footer__info-title">Company</h2>
+              <ul class="footer__info-list">
+                <li class="footer__info-item">
+                  <a
+                    href="./about.html"
+                    class="footer__info-link"
+                    aria-label="link to About"
+                    >About</a
+                  >
+                </li>
+                <li class="footer__info-item">
+                  <a
+                    href="#"
+                    class="footer__info-link"
+                    aria-label="link to Terms"
+                    >Terms</a
+                  >
+                </li>
+                <li class="footer__info-item">
+                  <a
+                    href="#"
+                    class="footer__info-link"
+                    aria-label="link to Privacy Policy"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li class="footer__info-item">
+                  <a
+                    href="#"
+                    class="footer__info-link"
+                    aria-label="link to Careers"
+                    >Careers</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__info-more">
+              <h2 class="footer__info-title">More</h2>
+              <ul class="footer__info-list">
+                <li class="footer__info-item">
+                  <a
+                    href="#"
+                    class="footer__info-link"
+                    aria-label="link to Documentation"
+                    >Documentation</a
+                  >
+                </li>
+                <li class="footer__info-item">
+                  <a
+                    href="#"
+                    class="footer__info-link"
+                    aria-label="link to License"
+                    >License</a
+                  >
+                </li>
+                <li class="footer__info-item">
+                  <a
+                    href="#"
+                    class="footer__info-link"
+                    aria-label="link to Changelog"
+                    >Changelog</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__descr">
+            <!-- Logo -->
+            <a href="/index.html" class="footer__logo">
+              <svg width="180" height="72" class="logo">
+                <use href="../images/sprite.svg#logo"></use>
+              </svg>
+            </a>
+
+            <p class="footer__descr-text">
+              Most business owners have no idea what to do with the extra cash
+              in their business.
+            </p>
+
+            <!-- Social links -->
+            <ul class="footer__socials-list">
+              <li class="footer__socials-item">
+                <a
+                  href="https://www.google.com/"
+                  class="footer__socials-link"
+                  target="_blank"
+                  aria-label="link to google"
+                >
+                  <svg class="footer__socials-img" width="20" height="20">
+                    <use href="../images/sprite.svg#social-google"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a
+                  href="https://twitter.com/"
+                  class="footer__socials-link"
+                  target="_blank"
+                  aria-label="link to twitter"
+                >
+                  <svg class="footer__socials-img" width="20" height="20">
+                    <use href="../images/sprite.svg#social-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a
+                  href="https://www.instagram.com/"
+                  class="footer__socials-link"
+                  target="_blank"
+                  aria-label="link to instagram"
+                >
+                  <svg class="footer__socials-img" width="20" height="20">
+                    <use href="../images/sprite.svg#social-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a
+                  href="https://www.linkedin.com/"
+                  class="footer__socials-link"
+                  target="_blank"
+                  aria-label="link to linkedin"
+                >
+                  <svg class="footer__socials-img" width="20" height="20">
+                    <use href="../images/sprite.svg#social-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a
+                  href="https://www.youtube.com/"
+                  class="footer__socials-link"
+                  target="_blank"
+                  aria-label="link to youtube"
+                >
+                  <svg class="footer__socials-img" width="20" height="20">
+                    <use href="../images/sprite.svg#social-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <p class="footer__copiright">Copyright © Poplar 2022</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/mobile-menu.js" type="module"></script>
   </body>
 </html>

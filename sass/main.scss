@@ -14,8 +14,23 @@
 @import './components/navigation';
 @import './components/burger-menu';
 
-// layouts styles
+// common layouts styles
 @import './layout/header';
-@import './layout/hero';
 @import './layout/footer';
 @import './components/modal';
+
+// home layouts styles
+@import './layout/home/hero';
+@import './layout/home/issue';
+
+// about layouts styles
+@import './layout/about/about-hero';
+
+// product layouts styles
+@import './layout/product/product-hero';
+
+// solutions layouts styles
+@import './layout/solutions/solutions-hero';
+
+// pricing layouts styles
+@import './layout/pricing/pricing-hero';
