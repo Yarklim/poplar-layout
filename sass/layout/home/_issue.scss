@@ -43,7 +43,7 @@
     top: -48px;
     transform: translateX(-50%);
 
-    background-image: url('../../../images/svg/packman.svg');
+    background: url('../../../images/svg/packman.svg');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -185,7 +185,7 @@
     left: -55px;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url('../../../images/svg/not.svg');
+    background: url('../../../images/svg/not.svg');
     background-size: cover;
 
     @media screen and (min-width: 768px) {
@@ -219,7 +219,7 @@
     left: -55px;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url('../../../images/svg/yes.svg');
+    background: url('../../../images/svg/yes.svg');
     background-size: cover;
 
     @media screen and (min-width: 768px) {
