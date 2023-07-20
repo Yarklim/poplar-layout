@@ -83,6 +83,23 @@
     color: var(--accent);
   }
 
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    left: 50%;
+    top: -48px;
+    transform: translateX(-50%);
+
+    background: url('../../images/svg/check.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   @media screen and (max-width: 767px) {
     font-size: 20px;
     color: var(--dark-blue);

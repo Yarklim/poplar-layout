@@ -354,12 +354,26 @@ body {
   line-height: 1.55;
   text-transform: capitalize;
   color: var(--light);
+  position: relative;
 }
 .header__nav-item:hover, .header__nav-item:focus {
   color: var(--green-darker);
 }
 .header__nav-item.active {
   color: var(--accent);
+}
+.header__nav-item::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  top: -48px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: url("../../images/svg/check.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 767px) {
   .header__nav-item {
