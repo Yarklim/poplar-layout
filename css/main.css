@@ -693,9 +693,14 @@ body {
     padding-bottom: 280px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .hero__inner {
+    padding-bottom: 350px;
+  }
+}
 @media screen and (min-width: 1366px) {
   .hero__inner {
-    padding-bottom: 480px;
+    padding-bottom: 450px;
   }
 }
 .hero__inner::before {
@@ -718,6 +723,14 @@ body {
     bottom: -28%;
     border-radius: 20px;
     background-image: url(../images/home/hero@desk.jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero__inner::before {
+    width: 908px;
+    height: 572px;
+    bottom: -38%;
+    border-radius: 25px;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -859,6 +872,11 @@ body {
 @media screen and (min-width: 768px) {
   .issue {
     padding-top: 380px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .issue {
+    padding-top: 430px;
   }
 }
 @media screen and (min-width: 1366px) {

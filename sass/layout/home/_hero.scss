@@ -22,8 +22,12 @@
     padding-bottom: 280px;
   }
 
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 350px;
+  }
+
   @media screen and (min-width: 1366px) {
-    padding-bottom: 480px;
+    padding-bottom: 450px;
   }
 
   &::before {
@@ -51,6 +55,15 @@
       border-radius: 20px;
 
       background-image: url(../images/home/hero@desk.jpg);
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 908px;
+      height: 572px;
+
+      bottom: -38%;
+
+      border-radius: 25px;
     }
 
     @media screen and (min-width: 1366px) {
