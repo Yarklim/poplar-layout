@@ -13,8 +13,57 @@
 
   text-align: center;
 
-  padding-top: 5%;
-  padding-bottom: 37.5%;
+  padding-top: 30px;
+  padding-bottom: 120px;
+
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 280px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-bottom: 480px;
+  }
+
+  &::before {
+    content: '';
+
+    width: 278px;
+    height: 175px;
+
+    border-radius: 9px;
+
+    position: absolute;
+    left: 50%;
+    bottom: -18%;
+    transform: translateX(-50%);
+
+    background-image: url(../images/home/hero@mob.jpg);
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+      width: 668px;
+      height: 420px;
+
+      bottom: -28%;
+
+      border-radius: 20px;
+
+      background-image: url(../images/home/hero@desk.jpg);
+    }
+
+    @media screen and (min-width: 1366px) {
+      width: 1168px;
+      height: 736px;
+
+      bottom: -40%;
+
+      border-radius: 32px;
+
+      background-image: url(../../../images/home/hero@retina.jpg);
+    }
+  }
 }
 
 .hero__descr {
@@ -98,14 +147,16 @@
   }
 
   @media screen and (min-width: 1024px) {
-    display: flex;
     flex-direction: row;
-    gap: 143px;
+    gap: 100px;
 
     margin-top: 90px;
 
-    font-size: 18px;
-    line-height: 1.5;
+    padding-left: 45px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    gap: 143px;
   }
 }
 

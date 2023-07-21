@@ -1,4 +1,4 @@
-.hero {
+.pricing-hero {
   width: 100%;
 
   z-index: 10;
@@ -6,7 +6,7 @@
   background-color: var(--dark-blue);
 }
 
-.hero__inner {
+.pricing-hero__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,13 +17,13 @@
   padding-bottom: 37.5%;
 }
 
-.hero__descr {
+.pricing-hero__descr {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hero__title {
+.pricing-hero__title {
   width: 230px;
 
   font-family: var(--font-arbutus);
@@ -45,7 +45,7 @@
   }
 }
 
-.hero__text {
+.pricing-hero__text {
   width: 278px;
 
   margin-top: 15px;
@@ -62,7 +62,7 @@
   }
 }
 
-.hero__btn {
+.pricing-hero__btn {
   margin-top: 20px;
 
   padding: 11px 52px;
