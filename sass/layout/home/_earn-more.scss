@@ -1,0 +1,88 @@
+.earn-more {
+  background-color: var(--light-blue);
+}
+
+.earn-more__inner {
+  text-align: center;
+}
+
+.earn-more__title {
+  font-family: var(--font-arbutus);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.24;
+  text-transform: capitalize;
+
+  color: var(--titles-color);
+
+  & span {
+    color: var(--green-darker);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 45px;
+  }
+}
+
+.earn-more__text {
+  max-width: 214px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.66;
+  text-transform: uppercase;
+
+  color: var(--dark-gray);
+
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 388px;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+.earn-more__deposit {
+  margin-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+}
+
+.deposit__title {
+  max-width: 286px;
+
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 698px;
+
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+  }
+}
+
+.deposite__range {
+  margin-top: 68px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 88px;
+  }
+}
+
+.deposit__period {
+  margin-top: 80px;
+
+  display: flex;
+}
