@@ -150,13 +150,23 @@
                 Select the amount of idle cash you want to deposit, and your
                 earning period:
               </h3>
-              <input
-                class="deposite__range"
-                type="range"
-                min="10"
-                max="500"
-                step="10"
-              />
+
+              <!-- Deposit Slider -->
+              <div class="deposit__slider">
+                <output for="deposit-slider" id="volume">0</output>
+                <input
+                  class="deposite__range"
+                  type="range"
+                  min="10"
+                  max="500"
+                  value="0"
+                  step="10"
+                  id="deposit-slider"
+                  oninput="outputUpdate(value)"
+                />
+              </div>
+
+              <!-- Deposit Period -->
               <div class="deposit__period">
                 <button class="btn deposit__period-btn">1 Month</button>
                 <button class="btn deposit__period-btn">12 Months</button>
@@ -368,6 +378,13 @@
       </footer>
     </div>
 
+    <script type="text/javascript">
+      const outputUpdate = (vol) => {
+        const output = document.querySelector('#volume');
+        output.value = vol;
+        output.style.left = vol - 20 + 'px';
+      };
+    </script>
     <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>
