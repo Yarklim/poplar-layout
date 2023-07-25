@@ -1,0 +1,135 @@
+.deposit__slider {
+  position: relative;
+
+  width: 280px;
+
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 543px;
+
+    margin-top: 88px;
+  }
+}
+
+input[type='range'] {
+  position: relative;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  display: block;
+
+  width: 280px;
+  height: 6px;
+
+  background-color: #d0dbe2;
+  border-radius: 8px;
+  outline: none;
+
+  @media screen and (min-width: 768px) {
+    width: 543px;
+
+    margin-top: 80px;
+  }
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 8px;
+}
+
+input[type='range']::-moz-track {
+  -moz-appearance: none;
+  height: 8px;
+}
+
+input[type='range']::-ms-track {
+  appearance: none;
+  height: 8px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+
+  height: 20px;
+  width: 20px;
+
+  margin-top: -6px;
+
+  border: 4.5px solid var(--accent);
+  background-color: var(--light);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb {
+  appearance: none;
+
+  height: 20px;
+  width: 20px;
+
+  margin-top: -7px;
+
+  border: 4.5px solid var(--accent);
+  background-color: var(--light);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+input[type='range']::-ms-thumb {
+  appearance: none;
+
+  height: 20px;
+  width: 20px;
+
+  margin-top: -7px;
+
+  border: 4.5px solid var(--accent);
+  background-color: var(--light);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+input[type='range']:active::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border: 3px solid var(--accent);
+}
+
+.slider__value {
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  transform: translateX(-50%);
+
+  font-weight: 600;
+  line-height: 2;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    top: -50px;
+    font-size: 22px;
+    line-height: 1.27;
+  }
+}
+
+.slider__range {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+
+  font-weight: 600;
+  line-height: 2;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.27;
+  }
+}

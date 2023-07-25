@@ -73,68 +73,83 @@
   }
 }
 
-.deposit__slider {
-  position: relative;
-
-  width: 280px;
-  height: 6px;
-
-  margin-top: 68px;
-  margin-left: auto;
-  margin-right: auto;
-
-  border-radius: 60px;
-
-  background-color: #f4f4f4;
-
-  @media screen and (min-width: 768px) {
-    width: 543px;
-
-    margin-top: 88px;
-  }
-}
-
-output {
-  position: absolute;
-  left: -20px;
-  top: -40px;
-  padding: 7px 10px;
-
-  border-radius: 10px 10px 0 10px;
-
-  background-color: var(--accent);
-}
-
-.deposite__range {
-  position: relative;
-  left: 3px;
-
-  width: 280px;
-  height: 6px;
-
-  background: var(--accent);
-  -webkit-appearance: none;
-  outline: none;
-
-  border-radius: 60px;
-
-  &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 25px;
-    height: 25px;
-
-    border: 4.5px solid var(--accent);
-    background-color: #fff;
-    border-radius: 50%;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 543px;
-  }
-}
-
+// ========= Deposit Period ==========
 .deposit__period {
   margin-top: 80px;
 
   display: flex;
+}
+
+.deposit__calculate-wrapper {
+  margin-top: 48px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.deposit__calculate-box {
+  width: 280px;
+  height: 500px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  border-radius: 35px;
+  background-color: var(--light);
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    height: 564px;
+  }
+}
+
+.payment-accounts {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.poplar-account {
+  background-color: var(--dark-blue);
+
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+    height: 629px;
+  }
+}
+
+.earn-more__logo {
+  width: 150px;
+  height: 60px;
+}
+
+.calculate-box__period {
+  font-size: 12px;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.period__sum {
+  font-family: var(--font-arbutus);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.26;
+
+  color: var(--accent);
 }
