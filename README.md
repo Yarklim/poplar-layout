@@ -2,8 +2,8 @@
 
 ## Tech stack: HTML, SCSS, JavaScript
 
-✔️ Multi Page
-✔️ Adaptive
+✔️ Multi Page    
+✔️ Adaptive    
 ❌ No plugins
 ____
 
