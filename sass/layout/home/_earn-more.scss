@@ -22,6 +22,26 @@
   }
 }
 
+.earn-more__img-hand {
+  width: 32px;
+  height: 38px;
+
+  @media screen and (min-width: 768px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.earn-more__img-more {
+  width: 3px;
+  height: 14px;
+
+  @media screen and (min-width: 768px) {
+    width: 5px;
+    height: 38px;
+  }
+}
+
 .earn-more__title {
   margin-top: 20px;
 
