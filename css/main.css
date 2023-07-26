@@ -613,6 +613,10 @@ input[type=range]:active::-webkit-slider-thumb {
   background: var(--light);
   cursor: pointer;
 }
+.carousel__item:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
 @media screen and (min-width: 768px) {
   .carousel__item {
     width: 130px;

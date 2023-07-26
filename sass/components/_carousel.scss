@@ -46,6 +46,10 @@
 
   cursor: pointer;
 
+  &:active {
+    transform: scale(0.95);
+  }
+
   @media screen and (min-width: 768px) {
     width: 130px;
   }
