@@ -205,7 +205,8 @@
   }
 }
 
-.calculate-box__item-text {
+.calculate-box__item-text,
+.calculate-box__item-period {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.25;
@@ -214,11 +215,12 @@
   color: var(--dark-gray);
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
-.calculate-box__item-value {
+.calculate-box__item-value,
+.calculate-box__deposit-amount {
   margin-top: 12px;
 
   font-family: var(--font-arbutus);
@@ -235,21 +237,24 @@
     font-size: 32px;
   }
 
+  @media screen and (min-width: 1366px) {
+    font-size: 40px;
+  }
+
   &.poplar-value {
     color: var(--light);
 
-    & span {
-      display: block;
-
-      color: var(--accent);
-
-      @media screen and (min-width: 1366px) {
-        font-size: 58px;
-      }
-    }
-
     @media screen and (min-width: 1366px) {
       font-size: 40px;
+    }
+  }
+  &.poplar-amount {
+    display: block;
+
+    color: var(--accent);
+
+    @media screen and (min-width: 1366px) {
+      font-size: 58px;
     }
   }
 }

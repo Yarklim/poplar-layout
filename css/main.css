@@ -1552,7 +1552,8 @@ input[type=range]:active::-webkit-slider-thumb {
   }
 }
 
-.calculate-box__item-text {
+.calculate-box__item-text,
+.calculate-box__item-period {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.25;
@@ -1560,12 +1561,14 @@ input[type=range]:active::-webkit-slider-thumb {
   color: var(--dark-gray);
 }
 @media screen and (min-width: 768px) {
-  .calculate-box__item-text {
-    font-size: 14px;
+  .calculate-box__item-text,
+  .calculate-box__item-period {
+    font-size: 16px;
   }
 }
 
-.calculate-box__item-value {
+.calculate-box__item-value,
+.calculate-box__deposit-amount {
   margin-top: 12px;
   font-family: var(--font-arbutus);
   font-style: normal;
@@ -1575,26 +1578,37 @@ input[type=range]:active::-webkit-slider-thumb {
   color: var(--dark-blue);
 }
 @media screen and (min-width: 768px) {
-  .calculate-box__item-value {
+  .calculate-box__item-value,
+  .calculate-box__deposit-amount {
     margin-top: 0;
     font-size: 32px;
   }
 }
-.calculate-box__item-value.poplar-value {
+@media screen and (min-width: 1366px) {
+  .calculate-box__item-value,
+  .calculate-box__deposit-amount {
+    font-size: 40px;
+  }
+}
+.calculate-box__item-value.poplar-value,
+.calculate-box__deposit-amount.poplar-value {
   color: var(--light);
 }
-.calculate-box__item-value.poplar-value span {
+@media screen and (min-width: 1366px) {
+  .calculate-box__item-value.poplar-value,
+  .calculate-box__deposit-amount.poplar-value {
+    font-size: 40px;
+  }
+}
+.calculate-box__item-value.poplar-amount,
+.calculate-box__deposit-amount.poplar-amount {
   display: block;
   color: var(--accent);
 }
 @media screen and (min-width: 1366px) {
-  .calculate-box__item-value.poplar-value span {
+  .calculate-box__item-value.poplar-amount,
+  .calculate-box__deposit-amount.poplar-amount {
     font-size: 58px;
-  }
-}
-@media screen and (min-width: 1366px) {
-  .calculate-box__item-value.poplar-value {
-    font-size: 40px;
   }
 }
 
