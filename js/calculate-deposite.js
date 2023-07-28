@@ -1,24 +1,82 @@
-const activeBtn = document.querySelectorAll('.carousel__item');
-const rangeAmount = document.getElementById('my-slider');
-const api = document.querySelectorAll('.api');
+const depositTabs = document.querySelector('.deposit__calc');
+const inputRange = document.querySelector('.my-slider');
+const periodBtn = document.querySelector('.carousel__item');
+const periodBtnList = document.querySelectorAll('.carousel__item');
 const depositPeriod = document.querySelectorAll('.calculate-box__item-period');
 const depositResult = document.querySelectorAll(
-  '.calculate-box__deposit-amount'
+  '.calculate-box__deposit-result'
 );
 
-let periodNumber = 12;
-let depositAmount = parseInt(rangeAmount.value);
+depositTabs.addEventListener('click', onChangeTextContent);
+depositTabs.addEventListener('click', toggleActivBtn);
+depositTabs.addEventListener('change', onChangeTextContent);
 
-document.addEventListener('click', function (e) {
+let period = parseInt(periodBtn.textContent);
+let amount = parseInt(inputRange.value);
+
+function onChangeTextContent(e) {
+  if (e.target.classList.contains('carousel__item')) {
+    period = parseInt(e.target.textContent);
+  }
+  if (e.target.classList.contains('my-slider')) {
+    amount = parseInt(e.target.value);
+  }
+
+  depositResult.forEach((el) => {
+    if (el.classList.contains('poplar-result')) {
+      el.textContent = `$${Number(
+        toReinvestApi(80, period, amount).toFixed(2)
+      ).toLocaleString('en')}`;
+    }
+    if (el.classList.contains('payment')) {
+      el.textContent = `$${Math.round(
+        toCalculateDeposit(1, period, amount)
+      ).toLocaleString('en')}`;
+    }
+    if (el.classList.contains('traditional')) {
+      el.textContent = `$${Math.round(
+        toCalculateDeposit(3, period, amount)
+      ).toLocaleString('en')}`;
+    }
+  });
+
+  if (period) {
+    depositPeriod.forEach((el) =>
+      period === 1
+        ? (el.textContent = `in ${period} month you will have`)
+        : (el.textContent = `in ${period} months you will have`)
+    );
+  }
+}
+
+function toCalculateDeposit(api, period, amount) {
+  amount *= 1000;
+  return (amount / 100) * api * (period / 12) + amount;
+}
+
+function toReinvestApi(api, period, amount) {
+  amount *= 1000;
+  let dayApi = api / 360;
+  let countPeriod = period * 30;
+  let result = 0;
+
+  while (countPeriod > 0) {
+    result += ((amount + result) / 100) * dayApi;
+    countPeriod -= 1;
+  }
+
+  return result + amount;
+}
+
+function toggleActivBtn(e) {
   const targetElement = e.target;
   let currentActiveIndex = null;
   let newActiveIndex = null;
 
-  periodNumber = parseInt(targetElement.textContent);
+  targetElement.classList.add('active-btn');
 
-  // ============ Toggle class Activ, change text content ==========
   if (targetElement.closest('.carousel__item')) {
-    activeBtn.forEach((el, index) => {
+    periodBtnList.forEach((el, index) => {
       if (el.classList.contains('active-btn')) {
         currentActiveIndex = index;
         el.classList.remove('active-btn');
@@ -29,25 +87,4 @@ document.addEventListener('click', function (e) {
     });
     targetElement.classList.add('active-btn');
   }
-
-  if (periodNumber) {
-    depositPeriod.forEach((el) =>
-      periodNumber === 1
-        ? (el.textContent = `in ${periodNumber} month you will have`)
-        : (el.textContent = `in ${periodNumber} months you will have`)
-    );
-
-    //  ================ Calculate deposit amount ===============
-    depositResult.forEach((el) => {
-      if (el.classList.contains('poplar-amount')) {
-        el.textContent = `$${periodNumber * depositAmount * 100}`;
-      } else {
-        el.textContent = `$${periodNumber * depositAmount * 3}`;
-      }
-    });
-  }
-});
-
-function toCalcApy(apy, sum, period) {
-  return 100 * (1 + apy / sum) * (365 / period) - 1;
 }

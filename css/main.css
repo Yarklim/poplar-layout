@@ -1568,7 +1568,7 @@ input[type=range]:active::-webkit-slider-thumb {
 }
 
 .calculate-box__item-value,
-.calculate-box__deposit-amount {
+.calculate-box__deposit-result {
   margin-top: 12px;
   font-family: var(--font-arbutus);
   font-style: normal;
@@ -1579,35 +1579,35 @@ input[type=range]:active::-webkit-slider-thumb {
 }
 @media screen and (min-width: 768px) {
   .calculate-box__item-value,
-  .calculate-box__deposit-amount {
+  .calculate-box__deposit-result {
     margin-top: 0;
     font-size: 32px;
   }
 }
 @media screen and (min-width: 1366px) {
   .calculate-box__item-value,
-  .calculate-box__deposit-amount {
+  .calculate-box__deposit-result {
     font-size: 40px;
   }
 }
 .calculate-box__item-value.poplar-value,
-.calculate-box__deposit-amount.poplar-value {
+.calculate-box__deposit-result.poplar-value {
   color: var(--light);
 }
 @media screen and (min-width: 1366px) {
   .calculate-box__item-value.poplar-value,
-  .calculate-box__deposit-amount.poplar-value {
+  .calculate-box__deposit-result.poplar-value {
     font-size: 40px;
   }
 }
-.calculate-box__item-value.poplar-amount,
-.calculate-box__deposit-amount.poplar-amount {
+.calculate-box__item-value.poplar-result,
+.calculate-box__deposit-result.poplar-result {
   display: block;
   color: var(--accent);
 }
 @media screen and (min-width: 1366px) {
-  .calculate-box__item-value.poplar-amount,
-  .calculate-box__deposit-amount.poplar-amount {
+  .calculate-box__item-value.poplar-result,
+  .calculate-box__deposit-result.poplar-result {
     font-size: 58px;
   }
 }

@@ -220,7 +220,7 @@
 }
 
 .calculate-box__item-value,
-.calculate-box__deposit-amount {
+.calculate-box__deposit-result {
   margin-top: 12px;
 
   font-family: var(--font-arbutus);
@@ -248,7 +248,7 @@
       font-size: 40px;
     }
   }
-  &.poplar-amount {
+  &.poplar-result {
     display: block;
 
     color: var(--accent);
