@@ -1,4 +1,4 @@
-const carousel = document.querySelector('.carousel__wrapper');
+const carousel = document.querySelector('.carousel-js');
 
 let isDragStart = false,
   prevPageX,
