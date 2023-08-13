@@ -24,9 +24,11 @@ function onChangeTextContent(e) {
 
   depositResult.forEach((el) => {
     if (el.classList.contains('poplar-result')) {
-      el.textContent = `$${Number(
-        toReinvestApi(80, period, amount).toFixed(2)
-      ).toLocaleString('en')}`;
+      el.textContent = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        currencyDisplay: 'narrowSymbol',
+      }).format(toReinvestApi(80, period, amount));
     }
     if (el.classList.contains('payment')) {
       el.textContent = `$${Math.round(
