@@ -6,7 +6,7 @@
   border-radius: 50%;
   cursor: pointer;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.8px) {
   .burger-menu {
     display: -webkit-box;
     display: -ms-flexbox;

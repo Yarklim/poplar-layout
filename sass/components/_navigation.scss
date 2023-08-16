@@ -5,7 +5,7 @@
 }
 
 .header__nav-menu {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.8px) {
     position: fixed;
     left: -100%;
     top: 100px;
@@ -41,7 +41,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 90px;
+    gap: 80px;
   }
 
   @media screen and (min-width: 1366px) {
