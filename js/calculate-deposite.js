@@ -15,6 +15,7 @@ let period = parseInt(periodBtn.textContent);
 let amount = parseInt(inputRange.value);
 
 function onChangeTextContent(e) {
+  console.log(e.target);
   if (e.target.classList.contains('carousel__item')) {
     period = parseInt(e.target.textContent);
   }
