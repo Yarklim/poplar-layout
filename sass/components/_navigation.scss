@@ -56,14 +56,14 @@
   display: flex;
   gap: 36px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.8px) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 40px;
   }
 
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023.8px) {
     gap: 20px;
   }
 }
@@ -83,7 +83,7 @@
     color: var(--accent);
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.8px) {
     font-size: 20px;
     color: var(--dark-blue);
 
@@ -96,9 +96,9 @@
 }
 
 .header__button {
-  @include adaptiv-font(16, 8);
+  //   @include adaptiv-font(16, 8);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.8px) {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.75;
