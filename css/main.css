@@ -376,6 +376,21 @@ body {
 
 @media screen and (max-width: 767.8px) {
   .header__button {
+    position: fixed;
+    left: -100%;
+    bottom: 10%;
+    z-index: 5;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header__button.is-open {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 767.8px) {
+  .header__button {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.75;

@@ -96,7 +96,19 @@
 }
 
 .header__button {
-  //   @include adaptiv-font(16, 8);
+  @media screen and (max-width: 767.8px) {
+    position: fixed;
+    left: -100%;
+    bottom: 10%;
+    z-index: 5;
+
+    transition: 0.3s;
+
+    &.is-open {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 
   @media screen and (max-width: 767.8px) {
     font-size: 16px;
