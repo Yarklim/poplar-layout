@@ -327,7 +327,7 @@ body {
   display: flex;
   gap: 36px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.8px) {
   .header__nav-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -342,7 +342,7 @@ body {
     gap: 40px;
   }
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.8px) {
   .header__nav-list {
     gap: 20px;
   }
@@ -362,7 +362,7 @@ body {
 .header__nav-item.active {
   color: var(--accent);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.8px) {
   .header__nav-item {
     font-size: 20px;
     color: var(--dark-blue);
@@ -374,12 +374,7 @@ body {
   }
 }
 
-.header__button {
-  font-size: calc(
-    8px + 8 * ((100vw - 320px) / 1120)
-  );
-}
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.8px) {
   .header__button {
     font-size: 16px;
     font-weight: 600;
